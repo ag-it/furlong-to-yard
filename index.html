@@ -1,0 +1,30 @@
+<html>
+<head>
+    <!--Load Jqueary and Moment-->
+    <script type="text/javascript" src="jqueary.js"></script>
+    <script type="text/javascript" src="moment.js"></script>
+    <link type="text/css" href="main.css" rel="stylesheet">
+    <script type="text/javascript">
+        function compute(){
+            var input, result;
+            input = $("#textInput").val();
+            $("#textInput").val("");
+            result = (input*220);
+            $("#ans").text(result);
+        };
+
+    </script>
+</head>
+<body>
+<div class="center">
+    <p class="center inline">How many yards in </p><input type="text" class="textbox" id="textInput"><p class="inline"> furlongs</p>
+
+    <button type="button" class="button center block" onclick="compute()" value="Update">
+        <p class="small">Update</p>
+    </button>
+    <p class="large center" id="ans">Test</p>
+
+
+</div>
+</body>
+</html>
